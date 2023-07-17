@@ -13,18 +13,18 @@ function ColoriseByType() {
     var comp = app.project.activeItem; // Get active composition
     var layers = comp.selectedLayers; // Get selected layers
     var colors = {'none': 0, 'red': 1, 'yellow': 2, 'aqua': 3, 'pink': 4, 'lavender': 5, 'peach': 6, 'seafoam': 7, 'blue': 8, 
-    'green': 9, 'purple': 10, 'orange': 11, 'brown': 12, 'fuchsia': 13, 'cyan': 14, 'sandstone': 15, 'darkgreen': 16}; // Label colors
-    var adjustmentlayer = colors['seafoam'];
-    var avlayer         = colors['green'];
-    var audiolayer      = colors['green'];
-    var cameralayer     = colors['purple'];
-    var complayer       = colors['cyan'];
-    var guidelayer      = colors['sandstone'];
-    var lightlayer      = colors['yellow'];
-    var nulllayer       = colors['none'];
+    'green': 9, 'purple': 10, 'orange': 11, 'brown': 12, 'fuchsia': 13, 'cyan': 14, 'white': 15, 'darkgreen': 16}; // Label colors
+    var adjustmentlayer = colors['fuchsia'];
+    var avlayer         = colors['white'];
+    var audiolayer      = colors['seafoam'];
+    var cameralayer     = colors['pink'];
+    var complayer       = colors['orange'];
+    var guidelayer      = colors['darkgreen'];
+    var lightlayer      = colors['peach'];
+    var nulllayer       = colors['green'];
     var shapelayer      = colors['blue'];
-    var solidlayer      = colors['red'];
-    var textlayer       = colors['orange'];
+    var solidlayer      = colors['yellow'];
+    var textlayer       = colors['red'];
     if (layers != 0) { // If there is layer selection
         for (var i = 0; i < layers.length; i++) { // Loop through layers
             if (layers[i] instanceof AVLayer) { layers[i].label = avlayer; // If avlayer
